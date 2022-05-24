@@ -1,0 +1,121 @@
+:root{
+
+    /* Colors */
+
+    /* Primary */
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    /* Edited */
+    --Dark-gray-1: hsla(0, 0%, 59%, 0.2);
+
+}
+
+/* Stylig Page */
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top 165% right 185%, bottom 210% left 162%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, scroll;
+    background-color: var(--Dark-cyan);
+}
+
+/* Styling Container */
+#main{
+    margin: 135px auto; 
+    width: 340px;
+    border-radius: 15px;
+}
+
+/* Styling Top Part */
+#blank{
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+} 
+
+#image{
+    position: absolute;
+    top: 80px;
+    right: 115px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+/* Styling Bottom Part */
+#full{ 
+    background-color: white;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Styling Top Text */
+#heading{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    margin-top: 50px
+}
+
+#word{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+#wording{
+    color: var(--Dark-grayish-blue);
+    font-size: 13px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+hr{
+    border-width: 0;
+    height: 0.08px;
+    background-color: var(--Dark-gray-1);
+}
+
+/* Styling Bottom Text */
+#review{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#stats{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+.top{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.bottom{
+    color: var(--Dark-gray);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* Responsiveness */
+@media screen and (max-width:480px) {
+    body{
+        background-position: top 180% right -35%, bottom 180% left -30%;
+        /* background-color: white; */
+    }
+    
+}
