@@ -1,1 +1,1 @@
-# Project_7
+# Frontend Mentor | Profile card component solution
