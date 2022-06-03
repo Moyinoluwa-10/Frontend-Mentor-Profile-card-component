@@ -1,4 +1,4 @@
-:root{
+:root {
 
     /* Colors */
 
@@ -17,34 +17,34 @@
 
 }
 
-/* Stylig Page */
-body{
+/* Styling Page */
+body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-    background-position: top 165% right 185%, bottom 210% left 162%;
+    background-position: top 190% right 255%, bottom 200% left 242%;
     background-repeat: no-repeat, no-repeat;
     background-attachment: scroll, scroll;
     background-color: var(--Dark-cyan);
 }
 
 /* Styling Container */
-#main{
+#main {
     margin: 135px auto; 
     width: 340px;
     border-radius: 15px;
 }
 
 /* Styling Top Part */
-#blank{
+#blank {
     background-image: url(./images/bg-pattern-card.svg);
     height: 130px;
     border-radius: 15px 15px 0 0;
     position: relative;
 } 
 
-#image{
+#image {
     position: absolute;
     top: 80px;
     right: 115px;
@@ -53,7 +53,7 @@ body{
 }
 
 /* Styling Bottom Part */
-#full{ 
+#full { 
     background-color: white;
     text-align: center;
     padding: 30px 0;
@@ -61,38 +61,38 @@ body{
 }
 
 /* Styling Top Text */
-#heading{
+#heading {
     color: var(--Very-dark-desaturated-blue);
     font-weight: 700;
     margin-top: 50px
 }
 
-#word{
+#word {
     color: var(--Dark-grayish-blue);
     font-weight: 400;
     margin-left: 5px;
 }
 
-#wording{
+#wording {
     color: var(--Dark-grayish-blue);
     font-size: 13px;
     margin-top: -5px;
     margin-bottom: 25px;
 }
 
-hr{
+hr {
     border-width: 0;
     height: 0.08px;
     background-color: var(--Dark-gray-1);
 }
 
 /* Styling Bottom Text */
-#review{
+#review {
     display: flex;
     justify-content: space-evenly;
 }
 
-#stats{
+#stats {
     display: flex;
     flex-direction: column;
     line-height: 25px;
@@ -100,22 +100,38 @@ hr{
     margin-bottom: -10px;
 }
 
-.top{
+.top {
     color: var(--Very-dark-desaturated-blue);
     font-weight: 700;
 }
 
-.bottom{
+.bottom {
     color: var(--Dark-gray);
     font-size: 10px;
     letter-spacing: 1px;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: -70px;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
 /* Responsiveness */
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
     body{
         background-position: top 180% right -35%, bottom 180% left -30%;
-        /* background-color: white; */
+    }
+
+    #main {
+        width: 330px;
     }
     
 }
