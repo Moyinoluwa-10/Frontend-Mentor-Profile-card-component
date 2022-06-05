@@ -23,16 +23,15 @@ body {
     font-size: 18px;
     font-weight: 400;
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-    background-position: top 190% right 255%, bottom 200% left 242%;
+    background-position: bottom 250px right 680px, top 350px left 630px;
     background-repeat: no-repeat, no-repeat;
-    background-attachment: scroll, scroll;
     background-color: var(--Dark-cyan);
 }
 
 /* Styling Container */
 #main {
     margin: 135px auto; 
-    width: 340px;
+    width: 330px;
     border-radius: 15px;
 }
 
@@ -125,13 +124,37 @@ hr {
 
 
 /* Responsiveness */
-@media screen and (max-width:500px) {
+@media screen and (min-width:1100px)  and (max-width:1300px) {
     body{
-        background-position: top 180% right -35%, bottom 180% left -30%;
+         background-position: bottom 250px right 580px, top 350px left 530px;
+     }
+ 
+}
+
+@media screen and (min-width:900px)  and (max-width:1100px) {
+   body{
+        background-position: bottom 250px right 480px, top 350px left 430px;
     }
 
-    #main {
-        width: 330px;
+}
+
+@media screen and (min-width:700px)  and (max-width:900px) {
+    body{
+        background-position: bottom 250px right 380px, top 350px left 330px;
     }
-    
+
+}
+
+@media screen and (min-width:500px)  and (max-width:700px) {
+    body{
+        background-position: bottom 250px right 270px, top 350px left 240px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background-position: bottom 250px right 160px, top 300px left 110px;
+    }
+
 }
